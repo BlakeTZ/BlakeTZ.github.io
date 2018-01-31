@@ -1,0 +1,205 @@
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+input {
+    outline: none;
+    padding-left: 10px;
+    box-shadow: 0 5px 5px 0  #ccc;
+}
+
+#nav {
+    width: 100%;
+    height: 80px;
+    background: #D0D1D1;
+}
+
+#nav>div {
+    padding-top: 20px;
+}
+
+#nav>div>div {
+    float: left;
+    height: 60px;
+    width: 25%;
+    text-align: center;
+    background: #E8E8E8;
+    cursor: pointer;
+    margin-left: 25px;
+    line-height: 60px;
+
+}
+
+#nav>div>div .text {
+    transition: background .2s linear;
+}
+
+#nav>div>div .text:hover {
+    background: #cac9c9;
+}
+
+#nav>div>div .text.active {
+    background: #f5f5f5;
+}
+
+#content .title {
+    margin: 25px 0 25px 0;
+}
+
+#content {
+    height: 600px;
+    padding: 0 75px;
+}
+
+#content .inner {
+    display: none;
+}
+
+#content .inner.active {
+    display: block;
+}
+
+.phone .textInp {
+    width: 74%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+    font-size: 16px;
+}
+
+.phone .board {
+    padding-top: 20px;
+}
+
+.phone .board .child {
+    cursor: pointer;
+}
+
+.phone .board .child:nth-of-type(1) .numBtn, .child:nth-of-type(2) .numBtn, .child:nth-of-type(3) .numBtn, .child:nth-of-type(4) .numBtn, .lastChild div{
+    float: left;
+}
+
+.phone .board .child:nth-of-type(2), .child:nth-of-type(4) {
+    margin: 15px 0;
+}
+
+.phone .board .child .numBtn:nth-of-type(2) {
+    margin: 0 15px;
+}
+
+.phone .board .child .numBtn, .lastChild div {
+    width: 150px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 25px;
+    text-align: center;
+    background: #E8E8E8;
+    transition: background .3s linear;
+}
+
+.phone .board .child .numBtn:hover, .lastChild div:hover {
+    background: #a9a9a9;
+}
+
+.phone .board .lastChild div {
+    width: 233px;
+    cursor: pointer;
+}
+
+.phone .board .lastChild div:first-child {
+    margin-right: 15px;
+}
+
+.contactListBox .contactList>div{
+    float: left;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background: #E8E8E8;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background .3s linear;
+    position: relative;
+    z-index: 1;
+}
+
+.contactListBox .contactList>div .viewBoard {
+    position: absolute;
+    top: -200%;
+    left: 100%;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    display: none;
+    z-index: 99;
+}
+
+.contactListBox .contactList>div:hover .viewBoard {
+    display: block;
+}
+
+.contactListBox .contactList>div .viewBoard .nameTit {
+    border-bottom: 1px solid #ccc;
+}
+
+.contactListBox .contactList>div .viewBoard>p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contactListBox .contactList>div .viewBoard>p span{
+    margin-left: 10px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contactListBox .contactList>div:hover {
+    background: #a9a9a9;
+}
+
+
+
+.addBox .innerBox {
+    margin: 20px 0;
+}
+
+.addBox .innerBox>input {
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.addBox .submitBox>div {
+    float: left;
+    padding: 20px 30px;
+    background: #cac9c9;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .3s linear;
+}
+
+.addBox .submitBox>div:hover {
+    background: #e2e2e2;
+}

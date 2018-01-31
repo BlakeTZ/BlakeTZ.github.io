@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tianlun</title>
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/phone.js"></script>
+</head>
+<body>
+<div id="nav">
+    <div class="clearfix">
+        <div id="Dialer"><h2 class="text active">Dialer</h2></div>
+        <div id="list"><h2 class="text">Contact List</h2></div>
+        <div id="Add"><h2 class="text">Add Contact</h2></div>
+    </div>
+</div>
+<div id="content">
+    <div>
+        <div id="dialer" class="inner active">
+            <div class="phone">
+                <h1 class="title">Dialer</h1>
+                <input type="text" value="" name="textInp" class="textInp">
+                <div class="board">
+                    <div class="child clearfix">
+                        <div class="numBtn">1</div>
+                        <div class="numBtn">2</div>
+                        <div class="numBtn">3</div>
+                    </div>
+                    <div class="child clearfix">
+                        <div class="numBtn">4</div>
+                        <div class="numBtn">5</div>
+                        <div class="numBtn">6</div>
+                    </div>
+                    <div class="child clearfix">
+                        <div class="numBtn">7</div>
+                        <div class="numBtn">8</div>
+                        <div class="numBtn">9</div>
+                    </div>
+                    <div class="child clearfix">
+                        <div class="numBtn">*</div>
+                        <div class="numBtn">0</div>
+                        <div class="numBtn">#</div>
+                    </div>
+                    <div class="lastChild clearfix">
+                        <div class="dialBtn">Dial</div>
+                        <div class="clearBtn">Clear</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content_list" class="inner">
+            <div class="contactListBox">
+                <h1 class="title">Contact List</h1>
+                <div class="contactList clearfix">
+                    <div>
+                        Tianlun Zhao
+                    </div>
+                    <div>
+                        Tianlun Zhao
+                    </div>
+                    <div>
+                        Tianlun Zhao
+                    </div>
+                    <div>
+                        Tianlun Zhao
+                    </div>
+                    <div>
+                        Tianlun Zhao
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="add_content" class="inner">
+            <div class="addBox">
+                <h1 class="title">Add Contact</h1>
+                <div class="content">
+                    <div class="name innerBox">
+                        <h4 class="addTit">Name</h4>
+                        <input type="text" name="name" placeholder ="Tianlun Zhao" value="">
+                    </div>
+                    <div class="phoneNum innerBox">
+                        <h4 class="addTit">Phone Number</h4>
+                        <input type="text" name="phoneNum" placeholder="123-456-789"  value="">
+                    </div>
+                    <div class="email innerBox">
+                        <h4 class="addTit">Email address</h4>
+                        <input type="email" name="email" placeholder="tizh6070@colorado.edu" value="">
+                    </div>
+                </div>
+                <div class="submitBox clearfix">
+                    <div class="add">add Contact</div>
+                    <div class="clear">Clear</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
