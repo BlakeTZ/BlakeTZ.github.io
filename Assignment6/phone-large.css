@@ -1,0 +1,236 @@
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+p {
+  color: white;
+  font-size: 200%
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background: black
+}
+
+input {
+    outline: none;
+    padding-left: 10px;
+    box-shadow: 0 5px 5px 0  #ccc;
+}
+
+#nav {
+    height: 80px;
+    background: black;
+}
+
+#nav>div {
+    padding-top: 20px;
+}
+
+#nav>div>div {
+    float: left;
+    height: 60px;
+    text-align: center;
+    background: black;
+    cursor: pointer;
+    margin-left: 25px;
+    line-height: 60px;
+
+}
+
+#nav>div>div .text {
+    padding: 0 10px;
+    transition: background .2s linear;
+    color:white
+}
+
+#nav>div>div .text:hover {
+    background: black;
+}
+
+#nav>div>div .text.active {
+    background: black;
+}
+
+#content .title {
+    margin: 25px 0 25px 0;
+}
+
+#content {
+    height: 600px;
+    padding: 0 75px;
+}
+
+#content .inner {
+    display: none;
+}
+
+#content .inner.active {
+    display: block;
+}
+
+.phone .textInp {
+    width: 74%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+    font-size: 16px;
+}
+
+.phone .board {
+    padding-top: 20px;
+}
+
+.phone .board .child {
+    cursor: pointer;
+}
+
+.phone .board .child:nth-of-type(1) .numBtn, .child:nth-of-type(2) .numBtn, .child:nth-of-type(3) .numBtn, .child:nth-of-type(4) .numBtn, .lastChild div{
+    float: left;
+    border:1px solid white;
+}
+
+.phone .board .child:nth-of-type(2), .child:nth-of-type(4) {
+    margin: 15px 0;
+}
+
+.phone .board .child .numBtn:nth-of-type(2) {
+    margin: 0 15px;
+}
+
+.phone .board .child .numBtn, .lastChild div {
+    width: 170px;
+    height: 100px;
+    line-height: 80px;
+    font-size: 45px;
+    color:white;
+    text-align: center;
+    background: black;
+    transition: background .3s linear;
+}
+
+.phone .board .child .numBtn:hover, .lastChild div:hover {
+    background: #a9a9a9;
+}
+
+.phone .board .lastChild div {
+    width: 26px;
+    cursor: pointer;
+}
+
+.phone .board .lastChild div:first-child {
+    margin-right: 15px;
+}
+
+.contactListBox .contactList>div{
+    float: left;
+    padding: 30px 40px;
+    margin: 10px 5px;
+    background: black;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background .3s linear;
+    border:1px solid white;
+    position: relative;
+    z-index: 1;
+    color:white
+}
+
+.contactListBox .contactList>div .viewBoard {
+    position: absolute;
+    top: -200%;
+    left: 100%;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    display: none;
+    z-index: 99;
+}
+
+.contactListBox .contactList>div:hover .viewBoard {
+    display: block;
+}
+
+.contactListBox .contactList>div .viewBoard .nameTit {
+    border-bottom: 1px solid #ccc;
+}
+
+.contactListBox .contactList>div .viewBoard>p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contactListBox .contactList>div .viewBoard>p span{
+    margin-left: 10px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contactListBox .contactList>div:hover {
+    background: grey;
+    color:white
+}
+
+
+
+.addBox .innerBox {
+    margin: 20px 0;
+    color:white
+}
+
+.addBox .innerBox>input {
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    color:black
+}
+
+.addBox .submitBox>div {
+    float: left;
+    padding: 20px 30px;
+    background: black;
+    margin: 10px;
+    border-radius: 10px;
+    border:1px solid white;
+    cursor: pointer;
+    transition: background .3s linear;
+    color:white
+}
+
+.addBox .submitBox>div:hover {
+    background: grey;
+}
+/*#Test_gestures .textArea{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    line-height: 50px;
+}
+
+#Test_gestures .pad {
+    height: 400px;
+    width: 400px;
+    background: #E6E6E6;
+    margin-top: 10px;
+    cursor: pointer;
+}*/

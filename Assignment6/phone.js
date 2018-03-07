@@ -2,31 +2,31 @@ $(document).ready(function () { // do this when the document is loaded
     $("#Dialer").show(); // show the element with ID "element"
     $("#content_list").hide(); // hide the element with ID "otherElement"
     $("#add_content").hide(); // hide the element with ID "otherElement"
-    $("#Test_gestures").hide();
+    $("#Aboutthisproject").hide();
 
     $("#Dialer").click(function () { // when "button_id" is clicked
         $("#dialer_pad").show(); // show element
         $("#content_list").hide();	// hide other element
         $("#add_content").hide();	// hide other element
-        $("#Test_gestures").hide();
+        $("#Aboutthisproject").hide();
     });
 
     $("#list").click(function () { // when "button_id" is clicked
         $("#content_list").show(); // show element
         $("#add_content").hide();	// hide other element
         $("#dialer_pad").hide();	// hide other element
-        $("#Test_gestures").hide();
+        $("#Aboutthisproject").hide();
     });
 
     $("#Add").click(function () { // when "button_id" is clicked
         $("#add_content").show(); // show element
         $("#dialer_pad").hide();	// hide other element
         $("#content_list").hide();	// hide other element
-        $("#Test_gestures").hide();
+        $("#Aboutthisproject").hide();
     });
 
-    $("#Gesture").click(function () { // when "button_id" is clicked
-        $("#Test_gestures").show(); // show elemenst
+    $("#About").click(function () { // when "button_id" is clicked
+        $("#Aboutthisproject").show(); // show elemenst
         $("#dialer_pad").hide();	// hide other element
         $("#content_list").hide();	// hide other element
         $("#add_content").hide();
