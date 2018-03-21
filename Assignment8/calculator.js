@@ -1,8 +1,6 @@
 // this gives us the order of the buttons, which we can use to step through the buttons in various directions
 // since we know the layout, + 1 moves to the next item, -1 previous, +4 is one row down, -4 is one row up
 buttonOrder = ["#button7","#button8","#button9","#buttonDivide","#button4","#button5","#button6","#buttonMultiply","#button1","#button2","#button3","#buttonAdd","#button0","#buttonClear","#buttonEquals","#buttonSubtract"];
-selectItem(buttonOrder[0]);
-setInterval(selectNext,800);
 
 // add the selected class to an item. you can pass this any jquery selector, such as #id or .class
 // calling this will de-select anything currently selected
@@ -94,7 +92,13 @@ function clickSelectedItem() {
 // this function responds to user key presses
 // you'll rewrite this to control your interface using some number of keys
 $(document).keypress(function(event) {
-	if (event.key == "Enter") {
+	if (event.key == "d") {
+		selectNext()
+	}
+	else if (event.key == "s") {
+		selectDown()
+	}
+	else if (event.key == "Enter") {
    clickSelectedItem()
   }
 })
